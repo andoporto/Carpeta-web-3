@@ -1,0 +1,29 @@
+﻿@model Vectores.Models.VectorR3
+
+@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <div>
+            @Html.ActionLink("Suma vectores", "Suma", "Home")
+        </div>
+        <div>
+            @Html.ActionLink("Resta vectores", "Resta", "Home")
+        </div>
+        <div>
+            @Html.ActionLink("Multiplica vectores", "Multiplicacion", "Home")
+        </div>      
+    </div>
+</body>
+</html>

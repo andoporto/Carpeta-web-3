@@ -1,0 +1,25 @@
+﻿@model List<Humano3.Models.Alumno>
+    @{
+        Layout = null;
+    }
+
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Index</title>
+    </head>
+    <body>
+        <div>
+            @foreach (Humano3.Models.Alumno c in Model)
+            {
+                <p>Edad: @c.Edad</p>
+                <p>DNI: @c.Dni</p>
+                <p>Nombre: @c.Nombre</p>
+                <br />
+            }
+        </div>
+    </body>
+
+</html>
+

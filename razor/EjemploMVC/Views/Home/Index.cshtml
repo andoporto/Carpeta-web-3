@@ -1,0 +1,24 @@
+﻿@model IEnumerable<EjemploMVC.Models.Libro>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+   <strong>Listado de libros</strong>
+    <br />
+    <ul>
+        @foreach (var libros in Model)
+        {
+            <li>@libros.Titulo (@libros.TipoLibro)</li>
+        }
+    </ul>
+</body>
+</html>

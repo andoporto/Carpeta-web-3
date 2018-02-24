@@ -1,0 +1,41 @@
+﻿@using Linq.Controllers
+@model List<Cliente>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Mostrar Pares Lambda</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Nombre</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var e in Model)
+            {
+                <tr>
+                    <td>@e.Id</td>
+                    <td>@e.Nombre</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <p>
+        @Html.ActionLink("Volver al inicio", "Index", "Home")
+    </p>
+</body>
+
+</html>
+
+
+
+

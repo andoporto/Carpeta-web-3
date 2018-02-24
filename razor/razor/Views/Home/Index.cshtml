@@ -1,0 +1,66 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>Iteracción</h1>
+        <ul>
+            @for (int i = 0; i < 10; i++)
+            {
+                <li>@i</li>
+            }
+        </ul>
+        <br />
+        @{
+            var mensaje1 = "Hola Mundo";
+            @mensaje1
+        }
+        <br />
+        <br />
+        <span>La hora es: @DateTime.Now</span>
+        <br />
+        <br />
+        @{
+            var mensaje = "Hola Mundo";
+            var diaDeLaSemana = DateTime.Now.DayOfWeek;
+            var mensaje2 = mensaje + " Hoy es " + diaDeLaSemana;
+            @mensaje2;
+        }
+        <br />
+        <br />
+        @{
+            var mensaje3 = "@: Hola Mundo";
+            @mensaje3;
+        }
+        <br />
+        <br />
+        @{
+            var mensaje4 = "unemail@gmail.com";
+            @mensaje4;
+        }
+        <br />
+        <br />
+        @{
+            var nombre = "Juan Perez";
+            var rol = "Desarrollador ASP:NET MVC";
+            <div>
+                Nombre: @nombre
+                Rol: @rol
+            </div>
+        }
+        <br />
+        <br />
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+﻿@model List<Humano2.Models.Alumno>
+  
+
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Index</title>
+    </head>
+    <body>
+        <div>
+            @foreach (Humano2.Models.Alumno c in Model)
+            {
+                <p>@c.Nombre</p>
+               <p>@c.Dni</p>
+               <p>@c.Edad</p>
+            }
+
+        </div>
+    </body>
+</html>
